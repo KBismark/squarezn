@@ -1,13 +1,12 @@
 // Home tab Screen 
-import React from 'react';
-import { View, Text } from 'react-native';
+import HomeScreen from '@/screens/home';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-const HomeScreen = () => {
+
+export default ()=>{
     return (
-        <View className="flex-1 justify-center items-center">
-            <Text className="text-lg font-bold">Home Tab</Text>
-        </View>
+        <SafeAreaView className='flex-1 bg-white'>
+            <HomeScreen />
+        </SafeAreaView>
     );
 };
-
-export default HomeScreen;
