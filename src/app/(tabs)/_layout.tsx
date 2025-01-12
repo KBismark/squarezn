@@ -55,27 +55,18 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Chats',
+          title: 'Home',
           tabBarLabelStyle: {fontSize: 12, fontWeight: '500'},
           tabBarIcon: ({ color }) => <Ionicons name='chatbubbles-outline' color={color} size={26} />,
           
         }}
       />
       <Tabs.Screen
-        name="stories"
+        name="explore"
         options={{
-          title: 'Stories',
+          title: 'Explore',
           tabBarLabelStyle: {fontSize: 12, fontWeight: '500'},
           tabBarIcon: ({ color }) => <MaterialIcons name='history-toggle-off' color={color} size={26} />,
-
-        }}
-      />
-      <Tabs.Screen
-        name="feed"
-        options={{
-          title: 'Feed',
-          tabBarLabelStyle: {fontSize: 12, fontWeight: '500'},
-          tabBarIcon: ({ color }) => <MaterialIcons style={{marginRight: -5}} name='tips-and-updates' color={color} size={26} />,
 
         }}
       />
@@ -84,14 +75,23 @@ export default function TabLayout() {
         options={{
           title: 'Search',
           tabBarLabelStyle: {fontSize: 12, fontWeight: '500'},
+          tabBarIcon: ({ color }) => <MaterialIcons style={{marginRight: -5}} name='tips-and-updates' color={color} size={26} />,
+
+        }}
+      />
+      <Tabs.Screen
+        name="reels"
+        options={{
+          title: 'Reels',
+          tabBarLabelStyle: {fontSize: 12, fontWeight: '500'},
           tabBarIcon: ({ color }) => <Feather name='search' color={color} size={26} />,
 
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="profile"
         options={{
-          title: 'Settings',
+          title: 'Profile',
           tabBarLabelStyle: {fontSize: 12, fontWeight: '500'},
           tabBarIcon: ({ color }) => <Ionicons name='settings-outline' color={color} size={26} />,
 

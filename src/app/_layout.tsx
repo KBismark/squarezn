@@ -17,7 +17,7 @@ export {
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: 'index',
+  initialRouteName: '(tabs)',
 };
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -64,7 +64,7 @@ const App = memo(()=>{
     <>
       <View style={styles.container}>
         <Stack>
-          <Stack.Screen name="index" options={screenOptions} />
+          <Stack.Screen name="(tabs)" options={screenOptions} />
         </Stack>
       </View>
       <StatusBar style={mode==='dark'?'light': 'dark'} />
