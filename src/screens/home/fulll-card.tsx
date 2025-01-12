@@ -1,7 +1,7 @@
 import { Dimensions, Pressable, Text } from "react-native"
 
 const {height: PAGE_HEIGHT}  = Dimensions.get('screen');
-const CARD_HEIGHT = PAGE_HEIGHT - 180
+const CARD_HEIGHT = (PAGE_HEIGHT * 0.9) - 180
 
 const FullCard = ()=>{
 
