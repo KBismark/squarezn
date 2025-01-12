@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "userInterfaceStyle": "automatic",
+    "orientation": "default",
+    "web": {
+      "output": "static",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://n"
+        }
+      ]
+    ],
+    "newArchEnabled": true,
+    "name": "expo-tailwind",
+    "slug": "expo-tailwind",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
