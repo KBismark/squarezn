@@ -2,17 +2,23 @@
 import { Header } from '@/components/header';
 import React from 'react';
 import { View, Text } from 'react-native';
-import { GestureHandlerRootView, ScrollView } from 'react-native-gesture-handler';
+import { FlatList, GestureHandlerRootView, ScrollView } from 'react-native-gesture-handler';
 import FullCard from './fulll-card';
+import { mockData } from './mock-data';
 
 const HomeScreen = () => {
     return (
         <GestureHandlerRootView className="flex-1">
             <Header title="Home" />
-            <ScrollView showsVerticalScrollIndicator={false} scrollEnabled={true} className='px-4' style={{flex: 1,}}>
-                <FullCard />
-                <FullCard />
-            </ScrollView>
+            <FlatList 
+                initialNumToRender={3}
+                data={mockData}
+                keyExtractor={(item, index) => `${item.username}-${index}`}
+                renderItem={({item}) => <FullCard {...item} />}
+                contentContainerClassName='px-4'
+                className='flex-1'
+                showsVerticalScrollIndicator={false}
+            />
         </GestureHandlerRootView>
     );
 };

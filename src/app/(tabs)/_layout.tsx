@@ -9,7 +9,7 @@ const isAndroid = Platform.OS === 'android';
 const useTheme = ()=>({
   mode: 'light',
   colors: {
-    primary: 'blue', 
+    primary: 'rgb(5, 181, 143)', 
     neutral: '#eee', 
     white: '#fff', 
     blurColor: '#f3f3f3'

@@ -7,7 +7,7 @@ export const Header: React.FC<HeaderProps> = ({title}) =>{
     const [alertOn, setAlert] = useState(true)
     return (
         <View className="flex-row justify-between items-center w-full h-16 px-4 py-1 bg-white ">
-            <Text className="text-lg font-bold capitalize">{title}</Text>
+            <Text className="text-2xl font-bold capitalize">{title}</Text>
 
             <View className="flex-row justify-between items-center">
                 <View className="rounded-full flex-row justify-center items-center mr-4">
