@@ -1,6 +1,7 @@
 import { Image, Pressable, Text, View } from "react-native";
 import { PostComments } from "./types";
 import {Feather, MaterialCommunityIcons, Octicons} from '@expo/vector-icons'
+import { memo } from "react";
 
 const Caption = ({username, userPhoto, message, replies}: PostComments)=>{
 
@@ -37,4 +38,4 @@ const Caption = ({username, userPhoto, message, replies}: PostComments)=>{
 }
 
 
-export const PostCaption = Caption;
+export const PostCaption = memo(Caption)
