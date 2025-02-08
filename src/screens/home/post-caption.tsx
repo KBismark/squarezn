@@ -28,7 +28,7 @@ const Caption = ({username, userPhoto, message, replies}: PostComments)=>{
                     <Feather className="text-gray-100" color={'cyan'} name='message-circle' size={24} />
                     <Text className="text-gray-100 ml-1 text-sm">2103</Text>
                 </Pressable>
-                <Pressable role="listitem" aria-label="Add Comment" className="items-center flex-row">
+                <Pressable role="listitem" aria-label="Share" className="items-center flex-row">
                     <Feather className="text-gray-100" color={'#ffffff'} name='share' size={24} />
                     <Text className="text-gray-100 ml-1 text-sm">12K</Text>
                 </Pressable>
