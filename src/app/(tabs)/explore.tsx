@@ -1,13 +1,13 @@
 // Home tab Screen 
+import ExploreScreen from '@/screens/explore';
 import React from 'react';
-import { View, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-const ExploreScreen = () => {
+export default () => {
     return (
-        <View className="flex-1 justify-center items-center">
-            <Text className="text-lg font-bold">Explore Tab</Text>
-        </View>
+        <SafeAreaView className='flex-1 bg-white'>
+            <ExploreScreen />
+        </SafeAreaView>
     );
 };
 
-export default ExploreScreen;
